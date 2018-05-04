@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<title>Atividade 2</title>
+		<script type="text/javascript" src="semnet.js"> </script>
+		<script type="text/javascript" src="semnetpage.js"></script>
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<body>
+		<h1>Rede semântica</h1>
+
+		<table id="conhecimento">
+			<tr>
+				<td colspan="4" class="title">Variáveis</td>
+			</tr>
+			<tr>
+				<td colspan="4">Animal, Mamífero, Mamífero, Cachorro, Gato, Pássaro, Peixe, Morcego, Minhoca</td>
+			</tr>
+			<tr>
+				<td colspan="4" class="title">Base de conhecimento</td>
+			</tr>
+			<tr>
+				<td>Cachorro é mamífero</td>
+				<td>Mamífero é animal</td>
+				<td>Pássaro é animal</td>
+				<td>Peixe é animal</td>
+			</tr>
+			<tr>
+				<td>Gato é animal</td>
+				<td>Gato tem pelos</td>
+				<td>Cachorro tem pelos</td>
+				<td>Pássaro tem asas</td>
+			</tr>
+			<tr>
+				<td>Morcego tem asas</td>
+				<td>Morcego é mamífero</td>
+				<td>Cachorro persegue Gato</td>
+				<td>Gato come Peixe</td>
+			</tr>
+			<tr>
+				<td>Pássaro come Minhoca</td>
+				<td>Peixe come Minhoca</td>
+				<td></td>
+				<td></td>
+			</tr>
+		</table>
+		
+		<table id="busca">
+			<tr>
+				<td id="exemplos">
+					<p>Exemplos de busca</p>
+					<p>é animal</p>
+					<p>é animal e come peixe</p>
+					<p>tem pelos</p>
+					<p>persegue gato</p>
+				</td>
+				<td id="area_de_busca">
+					<textarea id="queries" onkeydown="proceder(this, event)">Digite sua busca aqui</textarea>
+					<button id="search">Busca</button>
+				</td>
+				<td id="results">
+
+				</td>
+			</tr>
+		</table>
+	</body>
+</html>
